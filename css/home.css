@@ -48,10 +48,10 @@ div.slant-line {
 .intro__title {
 	font-family: rockwell, sans-serif;
 	font-size: 80px;
-	line-height: 100px;
+	line-height: 1.25em;
 	color: #CD927A;
 	width: 100%;
-	margin-bottom: 40px; 
+	margin-bottom: 0.5em; 
 }
 
 .intro__text {
@@ -474,4 +474,43 @@ textarea {
 
 .contact-form .action {
 	margin-top: 50px;
+}
+
+
+/* 
+---------------------------------------------
+Media Queries
+---------------------------------------------
+*/
+@media screen and (max-width: 1600px) {
+	
+}
+
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1176px) {
+	
+}
+
+@media screen and (max-width: 1024px) {
+	
+}
+
+@media screen and (max-width: 968px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
 }
