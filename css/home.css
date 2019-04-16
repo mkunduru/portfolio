@@ -4,14 +4,6 @@
 	position: relative;
 }
 
-div.slant-line {
-	height: 50px;
-	width: 2px;
-	background-color: #CD927A;
-	position: absolute;	
-	transform: rotate(25deg);
-}
-
 /* ==========================================================================
    Introduction
    ========================================================================== */
@@ -35,7 +27,7 @@ div.slant-line {
 	font-size: 21px;
 	line-height: 30px;
 	width: 100%;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	position: relative;
 	padding-left: 20px;
 }
@@ -51,37 +43,20 @@ div.slant-line {
 	line-height: 1.25em;
 	color: #CD927A;
 	width: 100%;
-	margin-bottom: 0.5em; 
+	margin-bottom: 0.6em; 
 }
 
 .intro__text {
-	font-size: 28px;
-	line-height: 44px;
-	width: 100%;
+	font-size: 26px;
+	line-height: 1.6em;
+	font-weight: 300;
+	width: 90%;
 }
 
 .intro__text p {
 	width: 90%;
 }
 
-.scroll-text {
-	position: absolute;
-	bottom: 11vh;
-	left: 50%;
-	transform: translate(-50%);
-	font-size: 18px;
-	line-height: 30px;
-}
-
-.scroll-line {
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translate(-50%);
-	width: 2px;
-	height: 10vh;
-	background-color: #CD927A;
-}
 
 /* ==========================================================================
    Projects
@@ -108,76 +83,27 @@ div.slant-line {
 	left: 0;
 	z-index: 25;
 	width: 100%;
+	padding-bottom: 50px;
 }
 
 .slide-content {
-	width: 38%;
-	margin-left: 7%;
+	width: 35%;
+	margin-left: 5%;
 }
 
 .slide-img {
 	position: absolute;
-	top: 50%;
+	top: calc(50% + 10px);
 	transform: translateY(-50%);
 	right: -30%;
 	z-index: 200;
-	height: 70vh;
-}
-
-.slider-title {
-	position: relative;
-	margin-bottom: 20px;
-}
-
-.slider-title .project-num {
-	position: absolute;
-	top: -80px;
-	left: -100px;
-	font-family: rockwell, sans-serif;
-	font-size: 175px;
-	line-height: 210px;
-	color: rgba(205, 146, 122, 0.25);
-}
-
-.slider-title .project-title {
-	color: #CD927A;
-	margin-bottom: 30px;
-}
-
-.slider-title .project-subtitle {
-	font-family: 'aktiv-grotesk-condensed', sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 18px;
-	margin-left: 15px; 
-	margin-bottom: 40px;
-	position: relative;
-}
-
-.slider-title .slant-line {
-	top: -5px;
-	left: -10px;
-	height: 30px;
-}
-
-.project-desc {
-	margin-bottom: 60px;
-}
-
-.slider .button {
-	margin-right: 20px;
-	color: #fff;
-}
-
-.slider .button.inactive {
-	background-color: #CCC;
-	cursor: default;
+	height: 75vh;
 }
 
 .slider-nav {
 	position: absolute;
-	z-index: 1000;
-	bottom: 2vh;
+	z-index: 900;
+	bottom: 0;
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -188,20 +114,25 @@ div.slant-line {
 }
 
 .slider-nav ul li {
-	padding: 0.5em 1em;
-	background-color: #000;
-	color: #fff;
-	font-family: 'aktiv-grotesk-condensed', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.slider-nav ul li.is-visible,
-.slider-nav ul li:hover {
+	padding: 0.8em 1.2em;
 	background-color: #CD927A;
 	color: #000;
+	font-family: 'aktiv-grotesk-condensed', sans-serif;
+	font-size: 21px;
+	line-height: 1em;
+	font-weight: 400;
+	font-style: normal;
 	cursor: pointer;
+}
+
+.slider-nav ul li.is-visible {
+	background-color: #333;
+	color: #fff;
+	cursor: pointer;
+}
+
+.slider-nav ul li.hvr-sweep-to-top:before {
+  background: #333;
 }
 
 .slide-img {
@@ -270,10 +201,12 @@ div.slant-line {
 }
 
 .slide.is-visible .slide-img {
-	right: -15%;
+	right: -12%;
 	opacity: 1;
 	transition: all ease 0.8s;
 }
+
+
 
 /* ==========================================================================
    Resume Experience Section
@@ -285,15 +218,19 @@ div.slant-line {
 
 .resume-actions {
 	position: absolute;
-	bottom: 0;
-	right: 10%;
+	top: -20px;
+	right: 0;
 	font-family: aktiv-grotesk-condensed, sans-serif;
+	display: flex;
+	justify-content: space-between;
+	width: 350px;
 }
 
-.resume-actions .slant-line {
-	bottom: 5px;
-	left: -20px;
-	height: 70px;
+.resume-print .slant-line,
+.resume-download .slant-line {
+	bottom: -5px;
+	left: -15px;
+	height: 30px;
 }
 
 .resume-actions img {
@@ -304,6 +241,7 @@ div.slant-line {
 .resume-download {
 	height: 20px;
 	margin-bottom: 12px; 
+	position: relative;
 }
 
 /*.resume-experience-section {
@@ -311,7 +249,7 @@ div.slant-line {
 }*/
 
 .resume-experience-section > div {
-	padding-top: 80px;
+	padding-top: 60px;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
@@ -321,6 +259,10 @@ div.slant-line {
 .experience-section {
 	display: flex;
 	margin-bottom: 40px;
+}
+
+.experience-section:last-child {
+	margin-bottom: 0;
 }
 
 .experience-section-title {
@@ -348,7 +290,7 @@ div.slant-line {
 }*/
 
 .resume-extra-section > div {
-	padding-top: 80px;
+	padding-top: 60px;
 	display: flex;
 	align-items: center;
 	height: 100vh;
@@ -362,10 +304,15 @@ div.slant-line {
 
 .extra-section {
 	width: 50%;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
-.extra-section > div {
+.extra-section h1 {
+	margin-bottom: 15px;
+}
+
+.extra-section-block {
 	width: 80%;
 }
 
@@ -446,34 +393,49 @@ div.slant-line {
 input[type=text] {
 	background: transparent;
 	border: none;
-	border-bottom: 3px solid #CD927A;
+	border-bottom: 2px solid #CD927A;
 	width: 100%;
 	color: #fff;
+	height: 40px;
 }
 
 textarea {
 	width: 100%;
-	height: 100px;
+	height: 120px;
 	background: transparent;
 	border: none;
-	border-top: 3px solid #CD927A;
-	border-bottom: 3px solid #CD927A;
+	border-bottom: 2px solid #CD927A;
 	margin-top: 10px;
 	color: #fff;
 }
 
+input[type=text]::placeholder,
+textarea::placeholder {
+	color: #999;
+	margin-bottom: 10px;
+}
+
 .form-field {
+	margin-bottom: 40px;
+}
+
+.form-field--last {
 	margin-bottom: 30px;
 }
 
 .contact-form .button {
-	background-color: #CD927A;
-	padding: 0.5em 1.5em;
+	color: #fff;
 	cursor: pointer;
 }
 
 .contact-form .action {
 	margin-top: 50px;
+}
+
+.contact-form .button.hvr-sweep-to-top:hover, 
+.contact-form .button.hvr-sweep-to-top:focus, 
+.contact-form .button.hvr-sweep-to-top:active {
+  color: #000;
 }
 
 
@@ -486,27 +448,60 @@ Media Queries
 	
 }
 
+@media screen and (max-width: 1440px) {
+	
+}
 
 @media screen and (max-width: 1280px) {
+	.intro__title {
+		font-size: 72px;
+	}
 
+	.intro__text {
+		font-size: 24px;
+	}
 }
 
 @media screen and (max-width: 1176px) {
-	
+	.intro__title {
+		font-size: 64px;
+	}
+
+	.intro__summary {	
+		margin-bottom: 30px;
+	}
 }
 
 @media screen and (max-width: 1024px) {
-	
+	.intro__title {
+		font-size: 56px;
+	}
 }
 
 @media screen and (max-width: 968px) {
-	
+	.intro__title {
+		font-size: 48px;
+	}
+
+	.intro__summary {	
+		margin-bottom: 20px;
+	}
+
 }
 
 @media screen and (max-width: 767px) {
+	.intro__title {
+		font-size: 42px;
+	}
 
+	.intro__text {
+		font-size: 18px;
+	}
+
+	.intro__text p {
+		width: 100%;
+	}
 }
-
 @media screen and (max-width: 480px) {
 
 }

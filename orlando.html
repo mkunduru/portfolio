@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://use.typekit.net/nyj7gzi.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/hover.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/case_study.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
@@ -28,15 +31,15 @@
 
   <!-- Add your site or application content here -->
   <div class="container case-study orlando--case-study">
-    <header class="light-bg">
-      <div class="menu-nav restrict-width no-border">
-        <div class="logo"><a href="index.html">meena</a></div>
+    <header>
+      <div class="menu-nav restrict-width">
+        <div class="logo" data-redirect="intro"><a href="index.html">meena</a></div>
         <nav>
           <ul class="menu">
-            <li id="menu-projects"><a href="index.html?section=projects">PROJECTS</a></li>
-            <li id="menu-resume"><a href="index.html?section=resume">RESUME</a></li>
-            <li id="menu-contact"><a href="index.html?section=contact">CONTACT</a></li>
-            <li class="linkedin"><a href="http://www.linkedin.com/in/meenakunduru" target="_blank"><img class="linkedin--black" src="img/linkedin-black.png"><img class="linkedin--white" src="img/linkedin-white.png"></a></li>
+            <li id="menu-projects" class="hvr-sweep-to-top"><a href="index.html?section=projects">PROJECTS</a></li>
+            <li id="menu-resume" class="hvr-sweep-to-top"><a href="index.html?section=resume">RESUME</a></li>
+            <li id="menu-contact" class="hvr-sweep-to-top"><a href="index.html?section=contact">CONTACT</a></li>
+            <li class="linkedin hvr-sweep-to-top"><a href="http://www.linkedin.com/in/meenakunduru" target="_blank"><img class="linkedin--black" src="img/linkedin-black.png"><img class="linkedin--white" src="img/linkedin-white.png"></a></li>
           </ul>
         </nav>
       </div>
@@ -55,14 +58,14 @@
           <div class="scroll-text">
             <p>Scroll down</p>
           </div>
-          <div class="scroll-line">
+          <div class="scroll-line buzz">
           </div>
         </div>
       </div>
     </div>
     <div class="case-study__sections scroll-section">
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
+        <div class="line line--split"></div>
         <div class="box-content">
           <div>
             <div class = "section-title">
@@ -80,26 +83,29 @@
               </div>
             </div>
             <div>
-              <h3>Target Audience</h3>
-              <p>The spot showcase targets design professionals and students between the ages of 20 - 40.</p>
+              <div class="content-block">
+                <h3>Target Audience</h3>
+                <p>The spot showcase targets design professionals and students between the ages of 20 - 40.</p>
+              </div>
             </div>
           </div>  
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content idea-section">
           <div class = "section-title">
             <span class="topic-number">02</span><h1>The Idea</h1>
           </div>
           <div>
-            <p class="idea-desc">
-               After a lot of discussion with my mentor, I came up with the idea of designing a fun and interactive website. I wanted to include a few games in the website that everyone would enjoy playing. Since the event was in Orlando, I wanted to incorporate an Orlando theme to connect with the local crowd. To give it a more personal touch, I planned to depict the city based on my experiences in Orlando. I planned to illustrate the city the way I saw it. 
-            </p>
+            <div class="content-block">
+              <p class="idea-desc">
+                 After a lot of discussion with my mentor, I came up with the idea of designing a fun and interactive website. I wanted to include a few games in the website that everyone would enjoy playing. Since the event was in Orlando, I wanted to incorporate an Orlando theme to connect with the local crowd. To give it a more personal touch, I planned to depict the city based on my experiences in Orlando. I planned to illustrate the city the way I saw it. 
+              </p>
+            </div>
           </div>
           <div class="two-column">
-            <div>
-              <p>The landmarks I picked were: </p>
+            <div class="content-block">
+              <h3>Landmarks</h3>
               <ul>
                 <li>Downtown Orlando</li>
                 <li>Orlando City soccer stadium</li>
@@ -110,8 +116,8 @@
                 <li>Kayaking in the lakes</li>
               </ul>
             </div>
-            <div>
-              <p>I wanted to link the games with some of the landmarks. The Games I wanted to include were: </p>
+            <div class="content-block">
+              <h3>Games</h3>
               <ul>
                 <li><span class="focus">Castle Match</span>
                   <br>Match cards hidden in castle windows. The castle represents Disney’s Magic kingdom.
@@ -125,7 +131,7 @@
               </ul> 
             </div>
           </div>
-          <div class="challenges-section">
+          <div class="challenges-section content-block">
             <h3>Challenges</h3>
             <ul>
               <li>Design and Develop games which I had never done before.</li>
@@ -134,128 +140,254 @@
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content userflow-section">
           <div class = "section-title">
             <span class="topic-number">03</span><h1>User Flow</h1>
           </div>
           <div>
-            <p>
-              I started my design by thinking about how I wanted the user to interact with my website. I planned to add my introduction at the beginning of the website and then lead the user into my view of Orlando. Then the user can play a game of their choice.
-            </p>
-            <a class="popup-image" href="img/experience-orlando/userflow.png">
-              <img class="mfp-zoom" src="img/experience-orlando/userflow.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                I started my design by thinking about how I wanted the user to interact with my website. I planned to add my introduction at the beginning of the website and then lead the user into my view of Orlando. Then the user can play a game of their choice.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/experience-orlando/userflow.png">
+                <img class="mfp-zoom img--medium" src="img/experience-orlando/userflow.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">04</span><h1>Wireframes</h1>
           </div>
           <div>
-            <p>
-              I then started coming up with layout for all the pages. I tried to go with less text on each page so as to not bore the user and planned to convey the messages through images and animations.</p>
-            <a class="popup-image" href="img/experience-orlando/wireframe1.png">
-              <img class="mfp-zoom" src="img/experience-orlando/wireframe1.png"></img>
-            </a>
-            <a class="popup-image" href="img/experience-orlando/wireframe2.png">
-              <img class="mfp-zoom" src="img/experience-orlando/wireframe2.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                I then started coming up with layout for all the pages. I tried to go with less text on each page so as to not bore the user and planned to convey the messages through images and animations.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/experience-orlando/wireframe1.png">
+                <img class="mfp-zoom" src="img/experience-orlando/wireframe1.png"></img>
+              </a>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/experience-orlando/wireframe2.png">
+                <img class="mfp-zoom" src="img/experience-orlando/wireframe2.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">05</span><h1>Type Study</h1>
           </div>
           <div>
-            <p>
-              I chose Chicle for headings as it is a playful font and goes with the fun theme of the website. I paired it with Koho, which is also a playful looking typeface that is easier to grasp visually.
-            </p>
-            <a class="popup-image" href="img/experience-orlando/type.png">
-              <img class="mfp-zoom" src="img/experience-orlando/type.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                I chose Chicle for headings as it is a playful font and goes with the fun theme of the website. I paired it with Koho, which is also a playful looking typeface that is easier to grasp visually.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/experience-orlando/type.png">
+                <img class="mfp-zoom img--medium" src="img/experience-orlando/type.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">06</span><h1>Color Study</h1>
           </div>
           <div>
-            <p>
-              I chose a big swatch palette with bright colors that are visually attractive and grab attention.This would go with he fun theme of the website and make it interesting.
-            </p>
-            <a class="popup-image" href="img/experience-orlando/colors.png">
-              <img class="mfp-zoom" src="img/experience-orlando/colors.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                I chose a big swatch palette with bright colors that are visually attractive and grab attention.This would go with the fun theme of the website and make it interesting.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/experience-orlando/colors.png">
+                <img class="mfp-zoom img--medium" src="img/experience-orlando/colors.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">07</span><h1>City Mockup</h1>
           </div>
           <div>
-            <a class="popup-image" href="img/experience-orlando/homepage.jpg">
-              <img class="mfp-zoom" src="img/experience-orlando/homepage.jpg"></img>
-            </a>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/experience-orlando/homepage.jpg">
+                <img class="mfp-zoom" src="img/experience-orlando/homepage.jpg"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
-        <div class="box-content postcards-section">
+      <div class="box restrict-width case-study__section">
+        <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">08</span><h1>Branding</h1>
+            <span class="topic-number">08</span><h1>Flight Journey</h1>
           </div>
           <div>
-            <p>I created souvenir postcards for Orlando using the illustrations of landmarks from the website. I used these as giveaways at the spot showcase.</p>
-            <a class="popup-image" href="img/experience-orlando/postcards.jpg">
-              <img class="mfp-zoom" src="img/experience-orlando/postcards.jpg"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                I added my introduction to the beginning of the website for Users to know me. My idea was to show my journey of becoming a designer which started when I moved to US. So, I started my introduction with an animated flight journey from India to Orlando. 
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/experience-orlando/flight.png">
+                <img class="mfp-zoom" src="img/experience-orlando/flight.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
+      <div class="box restrict-width case-study__section">
+        <div class="box-content">
+          <div class = "section-title">
+            <span class="topic-number">09</span><h1>Games</h1>
+          </div>
+          <div>
+            <div>
+              <div class="content-block">
+                <h3>Castle Match</h3>
+                <p>I linked this game to Disney landmark in the city. I used the castle as a background in the game to hide the cards. All the cards contain items related to princesses. This game is all about memory. Pairs of cards are hidden behind the castle windows. Users can click on the windows to reveal them.  The goal is to find all the pairs to move to the next level.</p>
+              </div>
+              <div class="line-div">
+                <div class="line line--img"></div>
+                <a class="popup-image" href="img/experience-orlando/castle-game.jpg">
+                  <img class="mfp-zoom img--medium" src="img/experience-orlando/castle-game.jpg"></img>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="content-block">
+                <h3>Balloon Lift</h3>
+                <p>I linked this game with hot air balloon rides in the city. This game is about tactics. Users can control the hot air balloon with keyboard arrows to collect candy falling from the sky. The goal is to avoid obstructions and collect enough candy to move to the next level.</p>
+              </div>
+              <div class="line-div">
+                <div class="line line--img"></div>
+                <a class="popup-image" href="img/experience-orlando/balloon-game.jpg">
+                  <img class="mfp-zoom img--medium" src="img/experience-orlando/balloon-game.jpg"></img>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="content-block">
+                <h3>Coaster Run</h3>
+                <p>I linked this to Universal landmark in the city by using a roller coaster like Hulk. This game is about speed. Arrow keys appear on the screen from below. Users have to use arrows on their keyboard to match the pattern that appears on the screen. When the user hits enough right keys, the coaster keeps moving without crashing. The goal is to match enough keys to move to the next level. </p>
+              </div>
+              <div class="line-div">
+                <div class="line line--img"></div>
+                <a class="popup-image" href="img/experience-orlando/coaster-game.jpg">
+                  <img class="mfp-zoom img--medium" src="img/experience-orlando/coaster-game.jpg"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box restrict-width case-study__section">
+        <div class="box-content">
+          <div class = "section-title">
+            <span class="topic-number">10</span><h1>UX enhancements</h1>
+          </div>
+          <div>
+            <div>
+              <div class="content-block">
+                <h3>Instruction pages</h3>
+                <p>For a better user experience, I added animations to the instruction page of each game for the user to understand them better. This also helped avoiding a lot of text which can be boring to the user.</p>
+              </div>
+              <div class="line-div">
+                <div class="line line--img"></div>
+                <a class="popup-image" href="img/experience-orlando/instructions.jpg">
+                  <img class="mfp-zoom" src="img/experience-orlando/instructions.jpg"></img>
+                </a>
+              </div>
+            </div>
+            <div>
+              <div class="content-block">
+                <h3>Instruction popup</h3>
+                <p>To enhance the user experience, I added an instruction popup that appears if the user did not interact with the game for 10 seconds. This popup has animations that would refresh the user on how to play the game.</p>
+              </div>
+              <div class="line-div">
+                <div class="line line--img"></div>
+                <a class="popup-image" href="img/experience-orlando/popup.jpg">
+                  <img class="mfp-zoom" src="img/experience-orlando/popup.jpg"></img>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box restrict-width case-study__section">
+        <div class="box-content postcards-section">
+          <div class = "section-title">
+            <span class="topic-number">11</span><h1>Branding</h1>
+          </div>
+          <div>
+            <div class="content-block">
+              <p>
+                I created souvenir postcards for Orlando using the illustrations of landmarks from the website. I used these as giveaways at the spot showcase.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/experience-orlando/postcards.jpg">
+                <img class="mfp-zoom" src="img/experience-orlando/postcards.jpg"></img>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box restrict-width case-study__section">
         <div class="line"></div>
         <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">09</span><h1>Web Development</h1>
+            <span class="topic-number">12</span><h1>Web Development</h1>
           </div>
-          <div>
+          <div class="content-block">
             <p>I learnt a lot of development techniques while building this website. It was built using HTML, CSS and JQuery primarily. I put in a lot of time on animations. All the illustrations were converted to SVGs and animated using CSS keyframes. I took some time to learn to code with tweenJS for animating the roller coaster.</p>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
+      <div class="box restrict-width case-study__section">
         <div class="line"></div>
         <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">10</span><h1>Result</h1>
+            <span class="topic-number">13</span><h1>Result</h1>
           </div>
-          <div>
+          <div class="content-block">
             <p>For the booth at the showcase, I set up a big screen with the video of the website along with a monitor where people could interact with it. I had a lot of visitors to my booth and people loved the concept and the idea behind it. People were having fun interacting with the website. In particular, they enjoyed a lot playing the games. I was very happy with the success of the project. I also got a lot of useful feedback from the users.</p>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
+      <div class="box restrict-width case-study__section">
         <div class="line"></div>
         <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">11</span><h1>Improvements</h1>
+            <span class="topic-number">14</span><h1>Improvements</h1>
           </div>
-          <div>
+          <div class="content-block">
             <p>Based on the feedback from the users at the showcase, I listed out the improvements that can be made in the next iteration.</p>
             <ul>
               <li>The game instruction pages need to have more text for the users to understand better.</li>
@@ -266,7 +398,83 @@
       </div>
     </div>
     <div class="case-study__website">
-      <a class="button button--large" href="https://orlando.meenakunduru.com/" target="_blank">View Website</a>
+      <a class="button button--large hvr-sweep-to-top" href="https://orlando.meenakunduru.com/" target="_blank">View Finished Website</a>
+    </div>
+    <div class="light-bg case-study-slideshow">
+      <div class="box restrict-width">
+          <div>
+            <div class="slideshow-title">
+              <div class="slant-line"></div>
+              <p>BROWSE OTHER PROJECTS</p>
+            </div>
+            <div class="next-project-slides">
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">New Image Youth Center</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="niyc.html" class="button">Case Study</a>
+                      <a href="https://newimageyouth.org/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/niyc.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Magic Lantern</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="magiclantern.html" class="button">Case Study</a>
+                      <a href="https://mkunduru.github.io/magic-lantern/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/magiclantern.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Pink Boots</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a class="button" href="pinkboots.html">Case Study</a>
+                      <a href="https://mkunduru.github.io/pink-boots/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/pinkboots.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Will's Pub</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="https://mkunduru.github.io/wills-pub/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/willspub.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
@@ -276,6 +484,7 @@
   <script src="js/vendor/jquery.scrollify.js"></script>
   <script src="js/vendor/jquery.magnific-popup.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/case_study.js"></script>
 

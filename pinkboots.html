@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://use.typekit.net/nyj7gzi.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/hover.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/case_study.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
@@ -28,15 +31,15 @@
 
   <!-- Add your site or application content here -->
   <div class="container case-study pink-boots--case-study">
-    <header class="light-bg">
-      <div class="menu-nav restrict-width no-border">
-        <div class="logo"><a href="index.html">meena</a></div>
+    <header>
+      <div class="menu-nav restrict-width">
+        <div class="logo" data-redirect="intro"><a href="index.html">meena</a></div>
         <nav>
           <ul class="menu">
-            <li id="menu-projects"><a href="index.html?section=projects">PROJECTS</a></li>
-            <li id="menu-resume"><a href="index.html?section=resume">RESUME</a></li>
-            <li id="menu-contact"><a href="index.html?section=contact">CONTACT</a></li>
-            <li class="linkedin"><a href="http://www.linkedin.com/in/meenakunduru" target="_blank"><img class="linkedin--black" src="img/linkedin-black.png"><img class="linkedin--white" src="img/linkedin-white.png"></a></li>
+            <li id="menu-projects" class="hvr-sweep-to-top"><a href="index.html?section=projects">PROJECTS</a></li>
+            <li id="menu-resume" class="hvr-sweep-to-top"><a href="index.html?section=resume">RESUME</a></li>
+            <li id="menu-contact" class="hvr-sweep-to-top"><a href="index.html?section=contact">CONTACT</a></li>
+            <li class="linkedin hvr-sweep-to-top"><a href="http://www.linkedin.com/in/meenakunduru" target="_blank"><img class="linkedin--black" src="img/linkedin-black.png"><img class="linkedin--white" src="img/linkedin-white.png"></a></li>
           </ul>
         </nav>
       </div>
@@ -54,14 +57,14 @@
           <div class="scroll-text">
             <p>Scroll down</p>
           </div>
-          <div class="scroll-line">
+          <div class="scroll-line buzz">
           </div>
         </div>
       </div>
     </div>
     <div class="case-study__sections scroll-section">
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
+        <div class="line line--split"></div>
         <div class="box-content">
           <div>
             <div class = "section-title">
@@ -76,7 +79,7 @@
                   Pink Boots is looking for an e-commerce website as its sole endpoint of business. They want an elegant and modern website to represent their collection of trendy and stylish boots. 
                 </p>
               </div>
-              <div>
+              <div class="content-block">
                 <h3>Target Audience</h3>
                 <p>
                   Pink Boots wants to target all boot lovers irrespective of their experience with boots. They want to focus on people looking for special boots to celebrate an occasion or gift it to their loved ones. 
@@ -84,117 +87,221 @@
               </div>
             </div>
             <div>
-              <h3>Communication Strategy</h3>
-              <ul>
-                <li>Design a logo that connects to boot lovers and also to their brand.</li>
-                <li>Easy to use interface for shoppers to find and buy the boots they need.</li>
-                <li>Use modern and elegant typefaces.</li>
-                <li>Add an instagram gallery to show current trends.</li>
-              </ul>
+              <div class="content-block">
+                <h3>Communication Strategy</h3>
+                <ul>
+                  <li>Design a logo that connects to boot lovers and also to their brand.</li>
+                  <li>Easy to use interface for shoppers to find and buy the boots they need.</li>
+                  <li>Use modern and elegant typefaces.</li>
+                  <li>Add an instagram gallery to show current trends.</li>
+                </ul>
+              </div>
             </div>
           </div>  
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
-        <div class="box-content">
-          <div class = "section-title">
-            <span class="topic-number">02</span><h1>Website Inspiration</h1>
-          </div>
-          <div>
-            <p>
-              I researched e-commerce websites to understand the current trends. Here is a collection of those that inspired me in my design decisions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="box restrict-width">
+      <div class="box restrict-width case-study__section">
         <div class="line"></div>
         <div class="box-content sitemap-section">
           <div class = "section-title">
-            <span class="topic-number">03</span><h1>User Flow</h1>
+            <span class="topic-number">02</span><h1>User Flow</h1>
           </div>
           <div>
-            <p>
-              I then mapped out the user workflow for shopping boots in the website. This helped me come up with the necessary webpages and the flow between them. I added a lookbook page with all the latest trends in boots.
-            </p>
+            <div class="content-block">
+              <p>
+                I started by mapping out the user workflow for shopping boots in the website. This helped me come up with the necessary webpages and the flow between them. I added a lookbook page with all the latest trends in boots.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/pink-boots/userflow.png">
+                <img class="mfp-zoom img--medium" src="img/pink-boots/userflow.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">04</span><h1>Wireframes</h1>
+            <span class="topic-number">03</span><h1>Wireframes</h1>
           </div>
           <div>
-            <p>
-              After coming up with the list of pages for the website, I started brainstorming for the relevant content on each page. I added multiple teasers like new arrivals, lookbook and gallery on the homepage for the users to start shopping. I also decided to showcase the product with a lot of images so that the user gets a feel for them.
-            </p>
+            <div class="content-block">
+              <p>
+                After coming up with the list of pages for the website, I started brainstorming for the relevant content on each page. I added multiple teasers like new arrivals, lookbook and gallery on the homepage for the users to start shopping. I also decided to showcase the product with a lot of images so that the user gets a feel for them.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/pink-boots/wireframe1.png">
+                <img class="mfp-zoom" src="img/pink-boots/wireframe1.png"></img>
+              </a>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/pink-boots/wireframe2.png">
+                <img class="mfp-zoom" src="img/pink-boots/wireframe2.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">05</span><h1>Type Study</h1>
+            <span class="topic-number">04</span><h1>Type Study</h1>
           </div>
           <div>
-            <p>
-              I chose Abril Fatface for headings for its refined touch and elegant appearance. Its good color and high contrast attracts reader attention. I paired it with a couple of modern and easy to read fonts, Dosis for smaller headings and Roboto for body copy.
-            </p>
+            <div class="content-block">
+              <p>
+                I chose Abril Fatface for headings for its refined touch and elegant appearance. Its good color and high contrast attracts reader attention. I paired it with a couple of modern and easy to read fonts, Dosis for smaller headings and Roboto for body copy.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/pink-boots/type.png">
+                <img class="mfp-zoom img--medium" src="img/pink-boots/type.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">06</span><h1>Color Study</h1>
+            <span class="topic-number">05</span><h1>Color Study</h1>
           </div>
           <div>
-            <p>
-              I decided to use pink color because of the name of the website “pink boots”. I used pink for headings and highlights. I complemented it with black for body copy. For background colors, I used two shades of gray.
-            </p>
+            <div class="content-block">
+              <p>
+                I decided to use pink color because of the name of the website “pink boots”. I used pink for headings and highlights. I complemented it with black for body copy. For background colors, I used two shades of gray.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/pink-boots/colors.png">
+                <img class="mfp-zoom img--medium" src="img/pink-boots/colors.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">07</span><h1>Use Case</h1>
+            <span class="topic-number">06</span><h1>Mockups</h1>
           </div>
           <div>
-            <h3>Purchase a pair of boots</h3>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/pink-boots/set1.jpg">
+                <img class="mfp-zoom" src="img/pink-boots/set1.jpg"></img>
+              </a>
+            </div>
+            <div class="mockup-space"></div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/pink-boots/set2.jpg">
+                <img class="mfp-zoom" src="img/pink-boots/set2.jpg"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
-            <span class="topic-number">08</span><h1>Mockups</h1>
-          </div>
-        </div>
-      </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
-        <div class="box-content">
-          <div class = "section-title">
-            <span class="topic-number">09</span><h1>Development</h1>
+            <span class="topic-number">07</span><h1>Development</h1>
           </div>
           <div>
-            <p>
-              I decided to use pink color because of the name of the website “pink boots”. I used pink for headings and highlights. I complemented it with black for body copy. For background colors, I used two shades of gray.
-            </p>
+            <div class="content-block">
+              <p>
+                I developed the fully responsive website using HTML5, CSS3 and jQuery. For image gallery in the homepage I used a jQuery library, Photo Swipe.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="case-study__website">
-      <a class="button button--large" href="https://mkunduru.github.io/pink-boots/" target="_blank">View Website</a>
+      <a class="button button--large hvr-sweep-to-top" href="https://mkunduru.github.io/pink-boots/" target="_blank">View Finished Website</a>
+    </div>
+    <div class="light-bg case-study-slideshow">
+      <div class="box restrict-width">
+          <div>
+            <div class="slideshow-title">
+              <div class="slant-line"></div>
+              <p>BROWSE OTHER PROJECTS</p>
+            </div>
+            <div class="next-project-slides">
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Experience Orlando</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="orlando.html" class="button hvr-sweep-to-top">Case Study</a>
+                      <a href="http://orlando.meenakunduru.com" class="button hvr-sweep-to-top" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/orlando.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">New Image Youth Center</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="niyc.html" class="button">Case Study</a>
+                      <a href="https://newimageyouth.org/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/niyc.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Magic Lantern</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="magiclantern.html" class="button">Case Study</a>
+                      <a href="https://mkunduru.github.io/magic-lantern/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/magiclantern.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Will's Pub</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="https://mkunduru.github.io/wills-pub/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/willspub.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
@@ -204,6 +311,7 @@
   <script src="js/vendor/jquery.scrollify.js"></script>
   <script src="js/vendor/jquery.magnific-popup.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/case_study.js"></script>
 

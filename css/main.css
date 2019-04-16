@@ -201,10 +201,60 @@ h3 {
 .project-title {
   font-family: rockwell, sans-serif;
   font-style: normal;
-  font-size: 72px;
-  line-height: 90px;
+  font-size: 60px;
+  line-height: 1.25em;
   color: #333;
   margin-bottom: 40px;
+}
+
+.slider-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.slider-title .project-title {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.slider-title .project-num {
+  position: absolute;
+  top: -65px;
+  left: -120px;
+  font-family: rockwell, sans-serif;
+  font-size: 150px;
+  line-height: 1em;
+  color: rgba(77,77,77,0.1);
+}
+
+.slider-title .project-subtitle {
+  font-family: 'aktiv-grotesk-condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 15px; 
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.slider-title .slant-line {
+  top: -5px;
+  left: -10px;
+  height: 30px;
+}
+
+.slide-content .button {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.slide-content .button.inactive {
+  background-color: #CCC;
+  cursor: default;
+}
+
+.project-desc {
+  margin-bottom: 50px;
 }
 
 a {
@@ -212,14 +262,27 @@ a {
   color: #4D4D4D;
 }
 
+div.slant-line {
+  height: 50px;
+  width: 2px;
+  background-color: #CD927A;
+  position: absolute; 
+  transform: rotate(25deg);
+}
+
 .button {
   font-family: aktiv-grotesk-condensed, sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #fff;
+  color: #333;
   font-size: 21px;
-  background-color: #333;
-  padding: 0.5em 1em;
+  line-height: 1em;
+  border: 2px solid #CD927A;
+  padding: 0.5em 1.3em;
+}
+
+.hvr-sweep-to-top:before {
+  background: #CD927A;
 }
 
 .button--large {
@@ -244,7 +307,7 @@ a {
 
 header {
   background-color: #000;
-  height: 70px;
+  height: 60px;
   width: 100vw;
   position: fixed;
   top: 0;
@@ -270,6 +333,10 @@ header.light-bg .menu-nav.no-border {
   border-bottom: none;
 }
 
+header a {
+  color: #F2F2F2;
+}
+
 
 nav {
   display: flex;
@@ -278,8 +345,9 @@ nav {
   font-family: aktiv-grotesk, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 1em;
+  letter-spacing: 0.75px;
   color: #F2F2F2;
 }
 
@@ -290,11 +358,11 @@ header.light-bg nav a {
 
 nav ul {
   display: flex;
-  height: 70px;
+  height: 60px;
   align-items: center;
 }
 
-nav li {
+nav li.hvr-sweep-to-top {
   padding-left: 25px;
   padding-right: 25px;
   display: flex;
@@ -303,19 +371,24 @@ nav li {
   cursor: pointer;
 }
 
-nav li:not(:last-child):hover,
 nav li.selected:not(:last-child) {
-  color: #CD927A;
+  color: #000;
+  background-color: #CD927A;
 }
 
-nav li:last-child {
-  padding-right: 0;
+nav li.hvr-sweep-to-top:hover, 
+nav li.hvr-sweep-to-top:focus, 
+nav li.hvr-sweep-to-top:active,
+nav li.hvr-sweep-to-top:hover a, 
+nav li.hvr-sweep-to-top:focus a, 
+nav li.hvr-sweep-to-top:active a {
+  color: #000;
 }
 
 .logo {
   font-family: 'Global', cursive;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 52px;
+  line-height: 1em;
   color: #F2F2F2;
   width: 40%;
   cursor: pointer;
@@ -343,7 +416,40 @@ header.light-bg .linkedin--black {
 }
 
 .linkedin img{
-  height: 20px;
+  height: 16px;
+}
+
+.scroll-text {
+  position: absolute;
+  bottom: 11vh;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.scroll-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 2px;
+  height: 10vh;
+  background-color: #CD927A;
+  
+}
+
+.scroll-line.buzz {
+  animation: 1.5s buzz linear 0.5s infinite;
+}
+
+@keyframes buzz {
+    25% {
+        bottom: -20px;
+    }
+    50% {
+       bottom: 0; 
+    }
 }
 
 
@@ -434,8 +540,55 @@ header.light-bg .linkedin--black {
    Modify as content requires.
    ========================================================================== */
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  @media screen and (max-width: 1600px) {
+  
+  }
+
+  @media screen and (max-width: 1440px) {
+    
+  }
+
+  @media screen and (max-width: 1376px) {
+    .restrict-width {
+      padding: 0 40px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+
+  }
+
+  @media screen and (max-width: 1176px) {
+    
+  }
+
+  @media screen and (max-width: 1024px) {
+    
+  }
+
+  @media screen and (max-width: 968px) {
+    .restrict-width {
+      padding: 0 30px;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+
+  }
+
+  @media screen and (max-width: 585px) {
+    .restrict-width {
+      padding: 0 40px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+
+  }
+
+  @media screen and (max-width: 320px) {
+
+  }
 }
 
 @media print,

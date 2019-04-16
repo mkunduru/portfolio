@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="https://use.typekit.net/nyj7gzi.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/hover.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/case_study.css">
   <link rel="stylesheet" href="css/magnific-popup.css">
@@ -28,15 +31,15 @@
 
   <!-- Add your site or application content here -->
   <div class="container case-study magic-lantern--case-study">
-    <header class="light-bg">
-      <div class="menu-nav restrict-width no-border">
-        <div class="logo"><a href="index.html">meena</a></div>
+    <header>
+      <div class="menu-nav restrict-width">
+        <div class="logo" data-redirect="intro"><a href="index.html">meena</a></div>
         <nav>
           <ul class="menu">
-            <li id="menu-projects"><a href="index.html?section=projects">PROJECTS</a></li>
-            <li id="menu-resume"><a href="index.html?section=resume">RESUME</a></li>
-            <li id="menu-contact"><a href="index.html?section=contact">CONTACT</a></li>
-            <li class="linkedin"><a href="http://www.linkedin.com/in/meenakunduru" target="_blank"><img class="linkedin--black" src="img/linkedin-black.png"><img class="linkedin--white" src="img/linkedin-white.png"></a></li>
+            <li id="menu-projects" class="hvr-sweep-to-top"><a href="index.html?section=projects">PROJECTS</a></li>
+            <li id="menu-resume" class="hvr-sweep-to-top"><a href="index.html?section=resume">RESUME</a></li>
+            <li id="menu-contact" class="hvr-sweep-to-top"><a href="index.html?section=contact">CONTACT</a></li>
+            <li class="linkedin hvr-sweep-to-top"><a href="http://www.linkedin.com/in/meenakunduru" target="_blank"><img class="linkedin--black" src="img/linkedin-black.png"><img class="linkedin--white" src="img/linkedin-white.png"></a></li>
           </ul>
         </nav>
       </div>
@@ -55,15 +58,14 @@
           <div class="scroll-text">
             <p>Scroll down</p>
           </div>
-          <div class="scroll-line">
+          <div class="scroll-line buzz">
           </div>
         </div>
       </div>
     </div>
     <div class="case-study__sections scroll-section">
-      <div class="box restrict-width">
-        <!-- <p class="topic-number">01</p> -->
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
+        <div class="line line--split"></div>
         <div class="box-content">
           <!-- <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"> -->
           <div>
@@ -81,7 +83,7 @@
                 </p>
               </div>
               <!-- <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out"> -->
-              <div>
+              <div class="content-block">
                 <h3>Target Audience</h3>
                 <p>
                   Magic Lantern wants to target movie enthusiasts of all ages who are looking for a getaway with a nice dinner experience. They also want to attract people who are interested in hosting events with private screening.
@@ -90,142 +92,228 @@
             </div>
             <!-- <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out"> -->
             <div>
-              <h3>Communication Strategy</h3>
-              <ul>
-                <li>Design a logo that is modern and simple.</li>
-                <li>Use eye-catching colors and subtle transitions to engage the user.</li>
-                <li>A dedicated events page with the ability to request for information.</li>
-                <li>Focus on the movie experience they provide.</li>
-                <li>Implement a fully responsive website.</li>
-                <li>Promote their exclusive food and beverage choices.</li>
-              </ul>
+              <div class="content-block">
+                <h3>Communication Strategy</h3>
+                <ul>
+                  <li>Design a logo that is modern and simple.</li>
+                  <li>Use eye-catching colors and subtle transitions to engage the user.</li>
+                  <li>A dedicated events page with the ability to request for information.</li>
+                  <li>Focus on the movie experience they provide.</li>
+                  <li>Implement a fully responsive website.</li>
+                  <li>Promote their exclusive food and beverage choices.</li>
+                </ul>
+              </div>
             </div>
           </div>  
         </div>
       </div>
-      <div class="box restrict-width">
-        <!-- <p class="topic-number">02</p> -->
-        <div class="line"></div>
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">02</span><h1>User Persona</h1>
           </div>
           <div>
-            <p>
-              After studying the objectives of Magic Lantern, I could broadly classify the users of the website into two categories: movie-goers and event organizers. So, I came up with personas typical to both the users. I will keep their goals in mind when coming up with solutions.
-            </p>
-            <a class="popup-image" href="img/magic-lantern/userpersona.png">
-              <img class="mfp-zoom" src="img/magic-lantern/userpersona.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                After studying the objectives of Magic Lantern, I could broadly classify the users of the website into two categories: movie-goers and event organizers. So, I came up with personas typical to both the users. I will keep their goals in mind when coming up with solutions.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/magic-lantern/userpersona.png">
+                <img class="mfp-zoom img--medium" src="img/magic-lantern/userpersona.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
-        <!-- <p class="topic-number">03</p> -->
+      <div class="box restrict-width case-study__section">
         <div class="box-content sitemap-section">
           <div class = "section-title">
             <span class="topic-number">03</span><h1>Sitemap</h1>
           </div>
           <div>
-            <p>
-              Keeping the goals and pain points of the users in mind, I organized the pages with relevant content and added notes to consider in the next phase.
-            </p>
-            <a class="popup-image" href="img/magic-lantern/sitemap.png">
-              <img class="mfp-zoom" src="img/magic-lantern/sitemap.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                Keeping the goals and pain points of the users in mind, I organized the pages with relevant content and added notes to consider in the next phase.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/magic-lantern/sitemap.png">
+                <img class="mfp-zoom img--medium" src="img/magic-lantern/sitemap.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
-        <!-- <p class="topic-number">04</p> -->
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">04</span><h1>Wireframes</h1>
           </div>
           <div>
-            <p>
-              After finishing up the sitemap, I started focusing on the layout for all pages. The solutions I came up with are mapped out below
-            </p>
-            <a class="popup-image" href="img/magic-lantern/wireframe1.png">
-              <img class="mfp-zoom" src="img/magic-lantern/wireframe1.png"></img>
-            </a>
-            <a class="popup-image" href="img/magic-lantern/wireframe2.png">
-              <img class="mfp-zoom" src="img/magic-lantern/wireframe2.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                After finishing up the sitemap, I started focusing on the layout for all pages. The solutions I came up with are mapped out below
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/magic-lantern/wireframe1.png">
+                <img class="mfp-zoom" src="img/magic-lantern/wireframe1.png"></img>
+              </a>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/magic-lantern/wireframe2.png">
+                <img class="mfp-zoom" src="img/magic-lantern/wireframe2.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
-        <!-- <p class="topic-number">05</p> -->
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">05</span><h1>Type Study</h1>
           </div>
           <div>
-            <p>
-              Playfair Display was chosen for its display design and modern look. It also gives a stylistic effect on headings. I complemented it with Work Sans for its strong readability at medium text sizes throughout the website.
-            </p>
-            <a class="popup-image" href="img/magic-lantern/typography.png">
-              <img class="mfp-zoom" src="img/magic-lantern/typography.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                Playfair Display was chosen for its display design and modern look. It also gives a stylistic effect on headings. I complemented it with Work Sans for its strong readability at medium text sizes throughout the website.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/magic-lantern/typography.png">
+                <img class="mfp-zoom img--medium" src="img/magic-lantern/typography.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="box restrict-width">
-        <div class="line"></div>
-        <!-- <p class="topic-number">06</p> -->
+      <div class="box restrict-width case-study__section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">06</span><h1>Color Study</h1>
           </div>
           <div>
-            <p>
-              Magic Lantern is an entertainment venue, So I want to go for a bold and bright look. I chose yellow for the highlights since it is bright and immediately grabs the eye. It is also cheerful and creates a sense of excitement. I complemented yellow with black as it is bold and versatile.
-            </p>
-            <a class="popup-image" href="img/magic-lantern/colors.png">
-              <img class="mfp-zoom" src="img/magic-lantern/colors.png"></img>
-            </a>
+            <div class="content-block">
+              <p>
+                Magic Lantern is an entertainment venue, So I want to go for a bold and bright look. I chose yellow for the highlights since it is bright and immediately grabs the eye. It is also cheerful and creates a sense of excitement. I complemented yellow with black as it is bold and versatile.
+              </p>
+            </div>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/magic-lantern/colors.png">
+                <img class="mfp-zoom img--medium" src="img/magic-lantern/colors.png"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <!-- <div class="box restrict-width">
-        <p class="topic-number">07</p>
-        <div class="box-content">
-          <span class="topic-number">07</span><h1>Logo</h1>
-          <div>
-            <p>
-              For the logo, I want to go with the concept of Magic Lantern, which is an early type of image projector. I started illustrating different versions and ended up using a simpler version of it as I wanted my logo to be simple and modern.
-            </p>
-            <p>
-              For the name, I used Exo for its contemporary look. Quicksand proved to be a complimentary typeface that is legible enough to use in small sizes.
-            </p>
-          </div>
-        </div>
-      </div> -->
-      <div class="box restrict-width">
-        <div class="line"></div>
-        <!-- <p class="topic-number">08</p> -->
+      <div class="box restrict-width case-study__section mockup-section">
         <div class="box-content">
           <div class = "section-title">
             <span class="topic-number">07</span><h1>Mockups</h1>
           </div>
           <div>
-            <a class="popup-image" href="img/magic-lantern/mockup-set1.jpg">
-              <img class="mfp-zoom" src="img/magic-lantern/mockup-set1.jpg"></img>
-            </a>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/magic-lantern/mockup-set1.jpg">
+                <img class="mfp-zoom" src="img/magic-lantern/mockup-set1.jpg"></img>
+              </a>
+            </div>
             <div class="mockup-space"></div>
-            <a class="popup-image" href="img/magic-lantern/mockup-set2.jpg">
-              <img class="mfp-zoom" src="img/magic-lantern/mockup-set2.jpg"></img>
-            </a>
+            <div class="line-div">
+              <div class="line line--img"></div>
+              <a class="popup-image" href="img/magic-lantern/mockup-set2.jpg">
+                <img class="mfp-zoom" src="img/magic-lantern/mockup-set2.jpg"></img>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="case-study__website">
-      <a class="button button--large" href="https://mkunduru.github.io/magic-lantern/" target="_blank">View Website</a>
+      <a class="button button--large hvr-sweep-to-top" href="https://mkunduru.github.io/magic-lantern/" target="_blank">View Finished Website</a>
+    </div>
+    <div class="light-bg case-study-slideshow">
+      <div class="box restrict-width">
+          <div>
+            <div class="slideshow-title">
+              <div class="slant-line"></div>
+              <p>BROWSE OTHER PROJECTS</p>
+            </div>
+            <div class="next-project-slides">
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Experience Orlando</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="orlando.html" class="button hvr-sweep-to-top">Case Study</a>
+                      <a href="http://orlando.meenakunduru.com" class="button hvr-sweep-to-top" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/orlando.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">New Image Youth Center</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="niyc.html" class="button">Case Study</a>
+                      <a href="https://newimageyouth.org/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/niyc.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Pink Boots</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a class="button" href="pinkboots.html">Case Study</a>
+                      <a href="https://mkunduru.github.io/pink-boots/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/pinkboots.png" />
+                  </div>
+                </div>
+              </div>
+              <div class="next-project-slide">
+                <div class="next-project-slide-info">
+                  <div class="slide-content">
+                    <div class="slider-title">
+                      <p class="new-project-title">Will's Pub</p>
+                    </div>
+                    <div class="slide-content-body">
+                      <a href="https://mkunduru.github.io/wills-pub/" class="button" target="_blank">Website</a>
+                    </div>
+                  </div>
+                  <div class="next-project-slide-image">
+                    <img class="next-project-slide-img" src="img/willspub.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <script src="js/vendor/modernizr-3.7.1.min.js"></script>
@@ -235,6 +323,7 @@
   <script src="js/vendor/jquery.scrollify.js"></script>
   <script src="js/vendor/jquery.magnific-popup.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/case_study.js"></script>
 
