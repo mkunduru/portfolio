@@ -252,6 +252,13 @@ div.next-project-slide-image {
 	display: block;
 }
 
+.case-study img.img--medium-large {
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+	display: block;
+}
+
 .mockup-space {
 	margin-bottom: 80px;
 }
@@ -299,4 +306,85 @@ div.next-project-slide-image {
 	display: block;
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (max-width: 1600px) {
+  
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1376px) {
+	.img-left {
+		left: 2%;
+	}
+
+	.img-right {
+		right: 5%;
+	}
+
+	.case-study .two-column {
+		max-width: 90vw;
+		margin: 0 auto;
+	}
+
+	.description-section .two-column {
+		justify-content: space-around;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.case-study .project-title {
+		font-size: 36px;
+		line-height: 48px;
+		margin-bottom: 20px;
+	}
+
+	.case-study__hero-content {
+		width: 40%;
+		padding-right: 50px;
+	}
+
+	.case-study__hero-img img {
+		left: -12%;
+	}
+	/*.niyc--case-study */
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1176px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 968px) {
+
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 585px) {
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
 }
