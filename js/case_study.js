@@ -25,7 +25,9 @@ $(document).ready(function(){
 			}
 		}
 	});
+});
 
+$(window).on("load", function(){
 	$('.next-project-slides').slick({
 		dots: true,
 		infinite: true,
