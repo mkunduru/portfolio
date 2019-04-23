@@ -98,7 +98,7 @@
 
 .case-study h1 {
 	font-size: 36px;
-	line-height: 36px;
+	line-height: 1em;
 	color: #333;
 	text-align: center;
 	margin-bottom: 110px;
@@ -109,7 +109,7 @@
 	font-weight: 400;
 	font-style: normal;
 	font-size: 150px;
-	line-height: 150px;
+	line-height: 1em;
 	color: #F2F2F2;
 	position: absolute;
 	top: -50px;
@@ -276,12 +276,6 @@ div.next-project-slide-image {
 	margin: 0 auto;
 }
 
-.orlando--case-study .postcards-section img{
-	max-width: 700px;
-	display: block;
-	margin: 0 auto;
-}
-
 .orlando--case-study .idea-section .two-column {
 	max-width: 775px;
 	margin: 0 auto;
@@ -299,4 +293,103 @@ div.next-project-slide-image {
 	display: block;
 	margin-top: 50px;
 	margin-bottom: 50px;
+}
+
+/* 
+---------------------------------------------
+Media Queries
+---------------------------------------------
+*/
+
+@media screen and (min-width: 2100px) {
+	.box {
+		padding: 50px 20px;
+	}
+
+	.box-content p {
+		margin-bottom: 50px;
+	}
+
+	.line--split {
+		height: calc(100% - 200px);
+	}
+
+	.case-study .hero-text {
+		max-width: 750px;
+	}
+
+	.case-study__sections {
+		padding-top: 250px; 
+	}
+
+	.case-study__section {
+		margin-bottom: 75px;
+	}
+
+	.case-study h1 {
+		font-size: 64px;
+		margin-bottom: 150px;
+	}
+
+	.topic-number {
+		font-size: 225px;
+		top: -70px;
+	}
+
+	.case-study__section .content-block {
+		max-width: 1500px;
+	}
+
+	.case-study img.img--medium {
+		max-width: 1200px;
+	}
+
+	.orlando--case-study .idea-desc {
+		max-width: 1500px;
+		margin-bottom: 50px;
+	}
+
+	.orlando--case-study .idea-section .two-column {
+		max-width: 1500px;
+	}
+
+	.slideshow-title .slant-line {
+		height: 50px;
+		left: 10px;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	
+}
+
+@media screen and (max-width: 1440px) {
+	
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1176px) {
+	
+}
+
+@media screen and (max-width: 1024px) {
+	
+}
+
+@media screen and (max-width: 968px) {
+	
+}
+
+@media screen and (max-width: 767px) {
+	
+}
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
 }
