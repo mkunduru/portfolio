@@ -367,6 +367,42 @@ Media Queries
 	
 }
 
+@media screen and (max-width: 1376px) {
+	.img-left {
+		left: 2%;
+	}
+
+	.img-right {
+		right: 5%;
+	}
+
+	.case-study .two-column {
+		max-width: 90vw;
+		margin: 0 auto;
+	}
+
+	.description-section .two-column {
+		justify-content: space-around;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.case-study .project-title {
+		font-size: 36px;
+		line-height: 48px;
+		margin-bottom: 20px;
+	}
+
+	.case-study__hero-content {
+		width: 40%;
+		padding-right: 50px;
+	}
+
+	.case-study__hero-img img {
+		left: -12%;
+	}
+}
+
 @media screen and (max-width: 1280px) {
 
 }

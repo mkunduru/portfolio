@@ -551,6 +551,17 @@ Media Queries
 	
 }
 
+@media screen and (max-width: 1376px) {
+	.thank-you {
+		font-size: 66px;
+		line-height: 84px;
+	}
+
+	.slider-nav ul li {
+		font-size: 18px;
+	}
+}
+
 @media screen and (max-width: 1280px) {
 	.intro__title {
 		font-size: 72px;
