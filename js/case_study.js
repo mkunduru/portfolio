@@ -28,6 +28,9 @@ $(document).ready(function(){
 });
 
 $(window).on("load", function(){
+	slideshow = $('.case-study-slideshow').detach();
+	slideshow.appendTo('.container');
+
 	$('.next-project-slides').slick({
 		dots: true,
 		infinite: true,
