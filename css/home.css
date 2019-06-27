@@ -27,14 +27,14 @@
 	font-size: 21px;
 	line-height: 1.4em;
 	width: 100%;
-	margin-bottom: 20px;
+	margin-bottom: 1em;
 	position: relative;
-	padding-left: 20px;
+	padding-left: 1em;
 }
 
 .intro__summary .slant-line {
-	bottom: 5px;
-	left: 10px;
+	bottom: 0.15em;
+	left: 0.5em;
 }
 
 .intro__title {
@@ -224,6 +224,10 @@
 	display: flex;
 	justify-content: space-between;
 	width: 350px;
+}
+
+.resume-experience-section .resume-actions {
+	top: 0;
 }
 
 .resume-print .slant-line,
@@ -447,6 +451,126 @@ Media Queries
 */
 
 @media screen and (min-width: 2100px) {
+	
+}
+
+@media screen and (max-width: 1600px) {
+	.slide-img {
+		max-height: 600px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-height: 650px)  {
+	.slide {
+		padding-top: 60px;
+	}
+}
+
+@media screen and (max-width: 1376px), screen and (max-height: 650px)  {
+	.intro__title {
+		font-size: 70px;
+	}
+
+	.intro__text {
+		font-size: 21px;
+		width: 80%;
+	}
+
+	.slide-content {
+      width: 40%;
+    }
+
+	.slide-img {
+		max-height: 500px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.slide-content {
+      width: 40%;
+    }
+
+	.slide-img {
+		max-height: 450px;
+	}
+
+	.slider-nav ul li {
+      font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1176px), screen and (max-height: 550px) {
+	.intro__summary {
+		font-size: 18px;
+	}
+
+	.intro__title {
+		font-size: 60px;
+	}
+
+	.intro__text {
+		font-size: 18px;
+	}
+
+	.slide-img {
+		max-height: 400px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.intro__title {
+		font-size: 54px;
+	}
+}
+
+@media screen and (max-width: 968px) {
+	.slide-img {
+		max-height: 350px;
+	}
+}
+
+@media screen and (max-width: 886px), screen and (max-height: 450px) {
+	.intro__title {
+		font-size: 48px;
+	}
+
+	.intro__text {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.intro__summary {
+		font-size: 16px;
+	}
+
+	.intro__title {
+		font-size: 36px;
+	}
+
+	.intro__text {
+		font-size: 16px;
+		width: 90%;
+	}
+}
+@media screen and (max-width: 585px) {
+    .intro__title {
+		font-size: 28px;
+	}
+}
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+/*@media screen and (min-width: 2100px) {
 	.intro__summary {
 		font-size: 36px;
 		padding-left: 30px;
@@ -564,17 +688,17 @@ Media Queries
 
 @media screen and (max-width: 1280px) {
 	.intro__title {
-		font-size: 72px;
+		font-size: 60px;
 	}
 
 	.intro__text {
-		font-size: 24px;
+		font-size: 22px;
 	}
 }
 
 @media screen and (max-width: 1176px) {
 	.intro__title {
-		font-size: 64px;
+		font-size: 48px;
 	}
 
 	.intro__summary {	
@@ -583,9 +707,7 @@ Media Queries
 }
 
 @media screen and (max-width: 1024px) {
-	.intro__title {
-		font-size: 56px;
-	}
+	
 }
 
 @media screen and (max-width: 968px) {
@@ -618,4 +740,4 @@ Media Queries
 
 @media screen and (max-width: 320px) {
 
-}
+}*/

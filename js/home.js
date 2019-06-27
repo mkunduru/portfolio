@@ -2,9 +2,21 @@ var currentMenu = "intro";
 
 $(document).ready(function(){
 
+	$(window).resize(function(){
+		if($(window).width() < 960) {
+			$.scrollify.disable();
+		} else {
+			if($.scrollify.isDisabled()) {
+				$.scrollify.enable();
+			}
+			$.scrollify.update();
+		}
+	});
+
 	$.scrollify({
 		section: ".scroll-section",
 		scrollSpeed: 1200,
+		setHeights: false,
 		before: function(index, sections){
 			var object = sections[index];
 			var menuItem = object.data('menu');
@@ -12,12 +24,6 @@ $(document).ready(function(){
 				$('nav li').removeClass('selected');
 			};
 			$('#'+menuItem).addClass('selected');
-
-			// if(index == 1 || index == 2 || index == 3) {
-			// 	$('header').addClass('light-bg');	
-			// } else {
-			// 	$('header').removeClass('light-bg');	
-			// };
 
 			if(index == 1) {
 				if($('.slide.is-visible').length == 0){
@@ -64,7 +70,6 @@ $(document).ready(function(){
 			$.scrollify.move('#'+section);
 		}, 200);
 	}
-
 });
 
 function moveToSlide(index) {

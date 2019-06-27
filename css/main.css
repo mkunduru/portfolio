@@ -194,7 +194,7 @@ h3 {
   font-weight: 700;
   font-size: 21px;
   line-height: 1.4em;
-  margin-bottom: 10px;
+  margin-bottom: 0.5em;
   color: #CD927A;
 }
 
@@ -204,7 +204,7 @@ h3 {
   font-size: 60px;
   line-height: 1.25em;
   color: #333;
-  margin-bottom: 40px;
+  margin-bottom: 1.5em;
 }
 
 .slider-title {
@@ -425,7 +425,7 @@ header.light-bg .linkedin--black {
   left: 50%;
   transform: translate(-50%);
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.6em;
 }
 
 .scroll-line {
@@ -540,7 +540,7 @@ header.light-bg .linkedin--black {
    Modify as content requires.
    ========================================================================== */
 
-  @media screen and (min-width: 2100px) {
+  /*@media screen and (min-width: 2100px) {
 
     .container {
       font-size: 28px;
@@ -623,7 +623,7 @@ header.light-bg .linkedin--black {
       margin-left: 15px;
     }
 
-  }
+  }*/
 
   @media screen and (max-width: 1600px) {
   
@@ -633,8 +633,43 @@ header.light-bg .linkedin--black {
     
   }
 
-  @media screen and (max-width: 1376px) {
+  @media screen and (max-height: 715px) {
+    .slider-title .project-num {
+      font-size: 125px;
+      top: -45px;
+      left: -100px;
+    }
+  }
+
+  @media screen and (max-width: 1376px), screen and (max-height: 650px) {
+
     .restrict-width {
+      padding: 0 60px;
+    }
+
+    h1 {
+      font-size: 42px;
+    }
+
+    h2 {
+      font-size: 21px;
+    }
+
+    h3 {
+      font-size: 21px;
+    }
+
+    .project-title {
+      font-size: 54px;
+    }
+
+    .slider-title .project-num {
+      font-size: 125px;
+      top: -55px;
+      left: -100px;
+    }
+
+    /*.restrict-width {
       padding: 0 40px;
     }
 
@@ -675,34 +710,80 @@ header.light-bg .linkedin--black {
       font-size: 128px;
       top: -50px;
       left: -65px;
-    }
+    }*/
   }
 
   @media screen and (max-width: 1280px) {
+    .container {
+      font-size: 16px;
+    }
+
+    .slider-title {
+      margin-bottom: 15px;
+    }
+
+    .slider-title .project-subtitle {
+      margin-bottom: 15px;
+    }
+
+    .project-desc {
+      margin-bottom: 30px;
+    }
+
+    .button {
+      font-size: 18px;
+    }
 
   }
 
-  @media screen and (max-width: 1176px) {
-    
+  @media screen and (max-height: 550px) {
+    .restrict-width {
+      max-width: 1100px;
+    }
+  }
+
+  @media screen and (max-width: 1176px), screen and (max-height: 550px) {
+    div.slant-line {
+      height: 40px;
+    }
+
+    .scroll-text {
+      font-size: 16px; 
+    }
   }
 
   @media screen and (max-width: 1024px) {
     
   }
 
-  @media screen and (max-width: 968px) {
+  @media screen and (max-height: 450px) {
+    .restrict-width {
+      max-width: 900px;
+    }
+  }  
+  @media screen and (max-width: 968px), screen and (max-height: 450px) {
     .restrict-width {
       padding: 0 30px;
+    }
+
+    .logo {
+      font-size: 42px;
+    }
+
+    nav {
+      font-size: 12px;
     }
   }
 
   @media screen and (max-width: 767px) {
-
+    .scroll-text {
+      font-size: 14px; 
+    }
   }
 
   @media screen and (max-width: 585px) {
     .restrict-width {
-      padding: 0 40px;
+      padding: 0 20px;
     }
   }
 
