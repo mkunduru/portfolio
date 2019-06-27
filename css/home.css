@@ -212,22 +212,24 @@
    Resume Experience Section
    ========================================================================== */
 
-.resume-title {
+.resume-section {
+	margin-bottom: 25px;
+}
+
+.resume-experience-section {
 	position: relative;
+	padding-top: 100px;
+	margin-bottom: 75px;
 }
 
 .resume-actions {
 	position: absolute;
-	top: -20px;
+	top: 85px;
 	right: 0;
 	font-family: aktiv-grotesk-condensed, sans-serif;
 	display: flex;
 	justify-content: space-between;
 	width: 350px;
-}
-
-.resume-experience-section .resume-actions {
-	top: 0;
 }
 
 .resume-print .slant-line,
@@ -249,56 +251,21 @@
 	position: relative;
 }
 
-/*.resume-experience-section {
-	background-color: #F1DCD7;
-}*/
-
-.resume-experience-section > div {
-	padding-top: 60px;
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	height: 100vh;
+.resume-title {
+	margin-bottom: 40px;
 }
 
 .experience-section {
 	display: flex;
-	margin-bottom: 40px;
-}
-
-.experience-section:last-child {
-	margin-bottom: 0;
+	margin-bottom: 50px;
 }
 
 .experience-section-title {
-	width: 35%;
-}
-
-.experience-section-title > div {
-	margin-bottom: 10px;
-}
-
-.experience-section-title p {
-	font-family: aktiv-grotesk-condensed, sans-serif;
+	width: 40%;
 }
 
 .experience-section-desc {
 	width: 55%;
-}
-
-/* ==========================================================================
-   Resume Extra Section
-   ========================================================================== */
-
-/*.resume-extra-section {
-	background-color: #F1DCD7;
-}*/
-
-.resume-extra-section > div {
-	padding-top: 60px;
-	display: flex;
-	align-items: center;
-	height: 100vh;
 }
 
 .extra-sections {
@@ -308,25 +275,18 @@
 }
 
 .extra-section {
-	width: 50%;
+	width: 45%;
 	margin-top: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 50px;
 }
 
 .extra-section h1 {
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
 .extra-section-block {
-	width: 80%;
-}
-
-.extra-section-block {
-	margin-bottom: 20px;
-}
-
-.extra-section-block > div {
-	margin-bottom: 10px;
+	width: 90%;
+	margin-bottom: 25px;
 }
 
 .skills-title {
@@ -501,6 +461,10 @@ Media Queries
 	.slider-nav ul li {
       font-size: 19px;
     }
+
+    .thank-you {
+    	font-size: 60px;
+    }
 }
 
 @media screen and (max-width: 1176px), screen and (max-height: 550px) {
@@ -519,10 +483,18 @@ Media Queries
 	.slide-img {
 		max-height: 400px;
 	}
+
+	.experience-section {
+		justify-content: space-between;
+	}
 }
 
 @media screen and (max-width: 1024px) {
 	.intro__title {
+		font-size: 54px;
+	}
+
+	.thank-you {
 		font-size: 54px;
 	}
 }
@@ -530,6 +502,10 @@ Media Queries
 @media screen and (max-width: 968px) {
 	.slide-img {
 		max-height: 350px;
+	}
+
+	.resume-actions {
+		display: none;
 	}
 }
 

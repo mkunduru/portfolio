@@ -295,7 +295,7 @@ div.slant-line {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.67em;
   color: #4D4D4D;
 }
 
@@ -668,49 +668,6 @@ header.light-bg .linkedin--black {
       top: -55px;
       left: -100px;
     }
-
-    /*.restrict-width {
-      padding: 0 40px;
-    }
-
-    h1 {
-      font-size: 42px;
-      line-height: 56px;
-      margin-bottom: 20px; 
-    }
-
-    h2 {
-      font-size: 21px;
-      line-height: 30px;
-    }
-
-    h3 {
-      font-size: 21px;
-      line-height: 30px;
-      margin-bottom: 10px;
-    }
-
-    .container {
-      font-size: 16px;
-      line-height: 24px;
-    }
-
-    .project-title {
-      font-size: 48px;
-      margin-bottom: 25px;
-    }
-
-    .slider-title .project-subtitle {
-      font-size: 16px;
-      margin-bottom: 24px;
-    }
-
-    .slider-title .project-num {
-      font-family: 'rockwell-condensed';
-      font-size: 128px;
-      top: -50px;
-      left: -65px;
-    }*/
   }
 
   @media screen and (max-width: 1280px) {
@@ -749,6 +706,18 @@ header.light-bg .linkedin--black {
 
     .scroll-text {
       font-size: 16px; 
+    }
+
+    h1 {
+      font-size: 36px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 18px;
     }
   }
 
