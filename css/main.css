@@ -540,6 +540,29 @@ header.light-bg .linkedin--black {
    Modify as content requires.
    ========================================================================== */
 
+   @media screen and (min-width: 2100px) {
+      .container {
+        font-size: 24px;
+        line-height: 36px;
+      }
+
+      .restrict-width {
+        max-width: 1800px;
+      }
+
+      h1 {
+        font-size: 60px;
+      }
+
+      h2, h3 {
+        font-size: 30px;
+      }
+
+      .scroll-text {
+        font-size: 24px;
+      }
+   }
+
   /*@media screen and (min-width: 2100px) {
 
     .container {

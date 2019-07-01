@@ -411,7 +411,9 @@ Media Queries
 */
 
 @media screen and (min-width: 2100px) {
-	
+	.resume-actions {
+		width: 450px;
+	}
 }
 
 @media screen and (max-width: 1600px) {
@@ -545,6 +547,8 @@ Media Queries
 @media screen and (max-width: 320px) {
 
 }
+
+
 
 /*@media screen and (min-width: 2100px) {
 	.intro__summary {
