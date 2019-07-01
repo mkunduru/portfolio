@@ -13,6 +13,10 @@
 	margin: 0 auto;
 }
 
+.case-study__hero-content .case-study__website {
+	margin: 30px 0 0 0;
+}
+
 .case-study__sections {
 	padding: 100px 0 0 0;
 }
@@ -361,7 +365,9 @@ Media Queries
 }
 
 @media screen and (max-width: 1600px) {
-	
+	.case-study .hero-text {
+		max-width: 600px;
+	}
 }
 
 @media screen and (max-width: 1440px) {
@@ -369,6 +375,10 @@ Media Queries
 }
 
 @media screen and (max-width: 1376px) {
+	.case-study .hero-text {
+		max-width: 550px;
+	}
+
 	.img-left {
 		left: 2%;
 	}
@@ -401,6 +411,7 @@ Media Queries
 
 	.case-study__hero-img img {
 		left: -12%;
+		height: 
 	}
 }
 

@@ -204,7 +204,7 @@ h3 {
   font-size: 60px;
   line-height: 1.25em;
   color: #333;
-  margin-bottom: 1.5em;
+  margin-bottom: 20px;
 }
 
 .slider-title {
@@ -421,7 +421,7 @@ header.light-bg .linkedin--black {
 
 .scroll-text {
   position: absolute;
-  bottom: 11vh;
+  bottom: 7vh;
   left: 50%;
   transform: translate(-50%);
   font-size: 18px;
@@ -434,7 +434,7 @@ header.light-bg .linkedin--black {
   left: 50%;
   transform: translate(-50%);
   width: 2px;
-  height: 10vh;
+  height: 6vh;
   background-color: #CD927A;
   
 }
